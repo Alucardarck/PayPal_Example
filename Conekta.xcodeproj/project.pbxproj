@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEDF5D129A19823C2B3FBD8F /* Pods_Conekta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FDE1DC06B2A7853A1EC000 /* Pods_Conekta.framework */; };
 		D17BEBBA1D5F69FD007C20E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D17BEBB91D5F69FD007C20E2 /* main.m */; };
 		D17BEBBD1D5F69FD007C20E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D17BEBBC1D5F69FD007C20E2 /* AppDelegate.m */; };
 		D17BEBC01D5F69FD007C20E2 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = D17BEBBF1D5F69FD007C20E2 /* Start.m */; };
@@ -14,9 +15,13 @@
 		D17BEBC61D5F69FD007C20E2 /* Conekta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D17BEBC41D5F69FD007C20E2 /* Conekta.xcdatamodeld */; };
 		D17BEBC81D5F69FD007C20E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D17BEBC71D5F69FD007C20E2 /* Assets.xcassets */; };
 		D17BEBCB1D5F69FD007C20E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17BEBC91D5F69FD007C20E2 /* LaunchScreen.storyboard */; };
+		D17BEBD51D5F6C6C007C20E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D17BEBD41D5F6C6C007C20E2 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BAD3DB76B5534D78A2057B9 /* Pods-Conekta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conekta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Conekta/Pods-Conekta.release.xcconfig"; sourceTree = "<group>"; };
+		60A3715992DA78E57B14263A /* Pods-Conekta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conekta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Conekta/Pods-Conekta.debug.xcconfig"; sourceTree = "<group>"; };
+		B4FDE1DC06B2A7853A1EC000 /* Pods_Conekta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conekta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17BEBB51D5F69FD007C20E2 /* Conekta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conekta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17BEBB91D5F69FD007C20E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D17BEBBB1D5F69FD007C20E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		D17BEBC71D5F69FD007C20E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D17BEBCA1D5F69FD007C20E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D17BEBCC1D5F69FD007C20E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17BEBD41D5F6C6C007C20E2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDF5D129A19823C2B3FBD8F /* Pods_Conekta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BCAE84674738EE01C26FFF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4FDE1DC06B2A7853A1EC000 /* Pods_Conekta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8867A782021AAA9CEA4DE97F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60A3715992DA78E57B14263A /* Pods-Conekta.debug.xcconfig */,
+				5BAD3DB76B5534D78A2057B9 /* Pods-Conekta.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D17BEBAC1D5F69FD007C20E2 = {
 			isa = PBXGroup;
 			children = (
 				D17BEBB71D5F69FD007C20E2 /* Conekta */,
 				D17BEBB61D5F69FD007C20E2 /* Products */,
+				8867A782021AAA9CEA4DE97F /* Pods */,
+				2BCAE84674738EE01C26FFF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +94,7 @@
 				D17BEBCC1D5F69FD007C20E2 /* Info.plist */,
 				D17BEBC41D5F69FD007C20E2 /* Conekta.xcdatamodeld */,
 				D17BEBB81D5F69FD007C20E2 /* Supporting Files */,
+				D17BEBD41D5F6C6C007C20E2 /* Podfile */,
 			);
 			path = Conekta;
 			sourceTree = "<group>";
@@ -105,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D17BEBCF1D5F69FD007C20E2 /* Build configuration list for PBXNativeTarget "Conekta" */;
 			buildPhases = (
+				7E975DA75026730A6D4BE056 /* [CP] Check Pods Manifest.lock */,
 				D17BEBB11D5F69FD007C20E2 /* Sources */,
 				D17BEBB21D5F69FD007C20E2 /* Frameworks */,
 				D17BEBB31D5F69FD007C20E2 /* Resources */,
+				1741480163BC67C4942B7D2A /* [CP] Embed Pods Frameworks */,
+				FBF51AB66EEFC496BF8C68BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,11 +187,60 @@
 			files = (
 				D17BEBCB1D5F69FD007C20E2 /* LaunchScreen.storyboard in Resources */,
 				D17BEBC81D5F69FD007C20E2 /* Assets.xcassets in Resources */,
+				D17BEBD51D5F6C6C007C20E2 /* Podfile in Resources */,
 				D17BEBC31D5F69FD007C20E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1741480163BC67C4942B7D2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conekta/Pods-Conekta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E975DA75026730A6D4BE056 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF51AB66EEFC496BF8C68BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Conekta/Pods-Conekta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D17BEBB11D5F69FD007C20E2 /* Sources */ = {
@@ -281,6 +360,7 @@
 		};
 		D17BEBD01D5F69FD007C20E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60A3715992DA78E57B14263A /* Pods-Conekta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Conekta/Info.plist;
@@ -292,6 +372,7 @@
 		};
 		D17BEBD11D5F69FD007C20E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BAD3DB76B5534D78A2057B9 /* Pods-Conekta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Conekta/Info.plist;
@@ -320,6 +401,7 @@
 				D17BEBD11D5F69FD007C20E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
